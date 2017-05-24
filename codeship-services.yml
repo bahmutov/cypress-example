@@ -1,0 +1,2 @@
+test:
+  image: cypress/internal:cy-0.19.2
