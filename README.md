@@ -1,7 +1,16 @@
 # cypress-example
 
-> Testing local + deployed page using Cypress
-
-[![Build Status](https://travis-ci.org/bahmutov/cypress-example.svg?branch=master)](https://travis-ci.org/bahmutov/cypress-example)
+> Running Cypress tests on CI example
 
 [ ![Codeship Status for bahmutov/cypress-example](https://app.codeship.com/projects/383a35a0-22c3-0135-2f12-6edd8424d9c3/status?branch=master)](https://app.codeship.com/projects/221805)
+
+Any CI that supports Docker images should be able to run Cypress tests.
+For example this repo runs on [Codeship Pro](https://codeship.com/features/pro)
+by specifying a full base Docker image we have created at Cypress with
+the testing tool pre-installed
+[cypress/internal](https://hub.docker.com/r/cypress/internal/) or you can grab
+just [cypress/base](https://hub.docker.com/r/cypress/base/) and install
+Cypress yourself.
+
+See Codeship configuration files [codeship-services.yml](codeship-services.yml)
+and [codeship-steps.yml](codeship-steps.yml) for actual commands.
