@@ -1,2 +1,4 @@
-test:
-  image: cypress/internal:cy-0.19.2
+cypress_codeship_test:
+  build:
+    image: cypress/cypress_codeship_test
+    dockerfile: Dockerfile
