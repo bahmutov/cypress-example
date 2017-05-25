@@ -1,3 +1,7 @@
-- name: cypress-e2e
-  service: cypress_codeship_test
-  command: ls -l
+- name: cypress parallel tests
+  type: parallel
+  steps:
+    service: cypress_codeship_test
+    command: cypress run --spec cypress/integration/a-spec.js
+    service: cypress_codeship_test
+    command: cypress run --spec cypress/integration/b-spec.js
