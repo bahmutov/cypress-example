@@ -5,4 +5,4 @@ WORKDIR /app
 # Copy our test page and test files
 COPY index.html ./
 COPY cypress.json ./
-COPY cypress ./
+COPY cypress ./cypress
