@@ -1,3 +1,5 @@
 - name: cypress-e2e
   service: test
-  command: cypress run
+  command: |
+    ls -l
+    cypress run
