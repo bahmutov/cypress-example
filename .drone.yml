@@ -4,6 +4,19 @@ name: default
 steps:
 - name: frontend
   image: cypress/base:12.1.0
+  volumes:
+  - name: cache
+    path: ~/.npm
+  settings:
+    restore: true
+    mount:
+      - ~/.npm
   commands:
-  - npm install
+  - npm ci
   - npm run cypress:run
+
+volumes:
+  # cache NPM modules and Cypress binary
+  - name: cache
+    host:
+      path: ~/.npm
