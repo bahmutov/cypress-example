@@ -1,6 +1,6 @@
-# cypress-example
+# cypress-example [![Build Status](https://cloud.drone.io/api/badges/bahmutov/cypress-example/status.svg)](https://cloud.drone.io/bahmutov/cypress-example)
 
-> Running Cypress tests on CodeshipCI example
+> Running Cypress tests on CodeshipCI and Drone.io example
 
 [ ![Codeship Status for bahmutov/cypress-example](https://app.codeship.com/projects/383a35a0-22c3-0135-2f12-6edd8424d9c3/status?branch=master)](https://app.codeship.com/projects/221805)
 
