@@ -19,3 +19,5 @@ by the [Dockerfile](./Dockerfile), and the individual specs are executed
 in parallel. The final result - very fast execution of e2e tests!
 
 ![Cypress Codeship](images/cypress-codeship.png)
+
+For drone settings see [.drone.io](.drone.io)
