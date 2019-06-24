@@ -4,13 +4,18 @@ name: default
 steps:
 - name: frontend
   image: cypress/base:12.1.0
-  volumes:
-  - name: cache
-    path: ~/.npm
-  settings:
-    restore: true
-    mount:
-      - ~/.npm
+  # cannot map volumes and cache folders
+  # for non-trusted repos. But only admin users
+  # can mark repo Trusted
+  # and I am not an admin on cloud.drone.io
+
+  # volumes:
+  # - name: cache
+  #   path: ~/.npm
+  # settings:
+  #   restore: true
+  #   mount:
+  #     - ~/.npm
   commands:
   - npm ci
   - npm run cypress:run
