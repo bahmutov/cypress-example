@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: frontend
-  image: cypress/base:12
+  image: cypress/base:12.1.0
   commands:
   - npm install
   - npm run cypress:run
