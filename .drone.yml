@@ -20,8 +20,8 @@ steps:
   - npm ci
   - npm run cypress:run -- --record
 
-volumes:
-  # cache NPM modules and Cypress binary
-  - name: cache
-    host:
-      path: ~/.npm
+# volumes:
+#   # cache NPM modules and Cypress binary
+#   - name: cache
+#     host:
+#       path: ~/.npm
