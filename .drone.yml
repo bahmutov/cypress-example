@@ -1,0 +1,9 @@
+kind: pipeline
+name: default
+
+steps:
+- name: frontend
+  image: node
+  commands:
+  - npm install
+  - npm run cypress:run
