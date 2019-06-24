@@ -4,6 +4,12 @@ name: default
 steps:
 - name: frontend
   image: cypress/base:12.1.0
+  environment:
+    # pass secret environment variable from project settings
+    # https://docs.drone.io/user-guide/pipeline/secrets/
+    CYPRESS_RECORD_KEY:
+      from_secret: CYPRESS_RECORD_KEY
+
   # cannot map volumes and cache folders
   # for non-trusted repos. But only admin users
   # can mark repo Trusted
